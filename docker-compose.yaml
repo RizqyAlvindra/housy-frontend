@@ -1,0 +1,14 @@
+version: "3.8"
+
+services:
+  housy-frontend:
+    container_name: frontend
+    image: node:lts-alpine3.14
+    ports: 
+      - 2000:3000
+
+  housy-backend:
+    container_name: backend
+    image: node:lts-alpine3.14 
+    ports:
+      - 4000:5000 
