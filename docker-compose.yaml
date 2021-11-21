@@ -3,12 +3,8 @@ version: "3.8"
 services:
   housy-frontend:
     container_name: frontend
-    image: node:lts-alpine3.14
+    image: alvin/housyfrontend:latest 
+    stdin_open: true
     ports: 
-      - 2000:3000
+      - 3000:3000
 
-  housy-backend:
-    container_name: backend
-    image: node:lts-alpine3.14 
-    ports:
-      - 4000:5000 
